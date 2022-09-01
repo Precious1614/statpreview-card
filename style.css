@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: hsl(244, 38%, 16%);
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 350px;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+.about {
+  padding: 50px;
+  width: 450px;
+  margin-right: 20px;
+}
+.people1 {
+  width: 430px;
+  background-color: hsl(277, 76%, 53%);
+  border-radius: 0 6px 6px 0;
+}
+.people {
+  width: 430px;
+  height: 350px;
+  border-radius: 0 6px 6px 0;
+  opacity: 0.5;
+}
+.get {
+  margin-bottom: 30px;
+}
+.discover {
+  padding-right: 20px;
+}
+h1 {
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+}
+span {
+  font-size: 28px;
+  color: hsla(283, 80%, 66%, 0.73);
+}
+h2 {
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+}
+p {
+  font-size: 13px;
+  color: hsla(0, 0%, 100%, 0.507);
+  line-height: 20px;
+}
+.company {
+  margin-top: 55px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.uppercase {
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 910px) {
+  .card {
+    width: 700px;
+  }
+  .about {
+    padding: 20px;
+    width: 350px;
+    margin-right: 90px;
+  }
+  .people1 {
+    width: 400px;
+  }
+  .people {
+    width: 400px;
+  }
+  .get {
+    margin-bottom: 30px;
+  }
+  .company {
+    margin-top: 40px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .card {
+    width: 500px;
+    height: 300px;
+  }
+  .about {
+    padding: 20px;
+    width: 400px;
+    margin-right: 20px;
+  }
+
+  .get {
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 11px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .company {
+    margin-top: 20px;
+    padding-right: 2px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 270px;
+    height: 620px;
+    border-radius: 6px;
+  }
+
+  .people1 {
+    width: 300px;
+    padding-bottom: 2px;
+    margin-left: -10px;
+    background-color: hsl(277, 76%, 53%);
+    border-radius: 0 6px 0 0;
+  }
+  .people {
+    height: 250px;
+    border-radius: 0 6px 0 0;
+  }
+  .about {
+    padding: 60px 0;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    margin-top: -20px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  .discover {
+    margin-top: 15px;
+    padding-right: 5px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: 55px;
+  }
+  .company > div {
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 270px;
+    height: 620px;
+    border-radius: 6px;
+  }
+
+  .people1 {
+    width: 300px;
+    padding-bottom: 2px;
+    margin-left: -10px;
+    background-color: hsl(277, 76%, 53%);
+    border-radius: 0 6px 0 0;
+  }
+  .people {
+    height: 250px;
+    border-radius: 0 6px 0 0;
+  }
+  .about {
+    padding: 45px 0;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  .discover {
+    margin-top: 20px;
+    padding-right: 5px;
+  }
+  h1,
+  span {
+    font-size: 25px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: 55px;
+  }
+  .company > div {
+    padding-bottom: 15px;
+  }
+}
